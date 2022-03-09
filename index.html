@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vintage Games</title>
+</head>
+<body>
+    <!-- preloader -->
+    <section id="preloader" class="preloader"></section>
+
+    <!-- title -->
+    <header id="title" class="title">
+        <h1>Vintage Games</h1>
+    </header>
+
+    <!-- games -->
+    <!-- <section id="games" class="games">
+        <div class="tetris">
+            <img src="./img/tetris.jpg" alt="Game Image">
+        </div>
+        <div class="dinosaur">
+            <img src="./img/dinosaur.jpeg" alt="Game Image">
+        </div>
+        <div class="space">
+            <img src="./img/space.jpeg" alt="Game Image">
+        </div>
+    </section> -->
+
+    <!-- 버튼으로 게임 display 만들기 시도 -->
+    <section id="gameSection">
+        <!-- game 1 -->
+        <div class="gameDisplay1">
+            <button id="open" class="btn">BOUNCY BALL</button>
+            <div class="modal hidden">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                    <canvas id="space" width="400" height="400"></canvas>
+                    <button class="close">BACK</i></button>
+                </div>
+            </div>
+        </div>
+        <!-- game 2 -->
+        <div class="gameDisplay2">
+            <!-- <button id="open2" class="btn">Start Game</button>
+            <div class="modal hidden">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                    <div id="dinosaurGame" onclick="jump()">
+                        <div><img id="character" src="./img/jumpingDino.png" alt=""></div>
+                        <div id="block"></div>
+                    </div>
+                    <button class="close">BACK</i></button>
+                </div>
+            </div> -->
+            <button id="open2" class="btn">SUBERUNKER</button>
+            <div class="modal hidden">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                    <canvas id="dinosaur" width="400" height="400"></canvas>
+                    <button class="close">BACK</i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- madeBy -->
+    <footer id="footer" class="footer">
+        <small>&copy; Copyright 2022, Jae Yeon Jung</small>
+    </footer> 
+
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="ball.js"></script>
+    <script src="dinosaur.js"></script>
+</body>
+</html>
